@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/user_register_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/result_ok"
+        android:tint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/user_register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/spacing_small"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_big"
+        tools:text="¡Bien, Usuario!\nTu cuenta está creada" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_register_title"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="@string/register_ok_instructions"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/user_select_address_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/user_select_address"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/skip_address"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/user_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/spacing_small"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/user_select_address"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

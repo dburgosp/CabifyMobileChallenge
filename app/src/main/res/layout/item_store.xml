@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="@dimen/image_size_88"
+        android:layout_height="@dimen/image_size_88"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/spacing_very_small"
+        android:scaleType="centerCrop"
+        android:src="@drawable/t_shirt"
+        android:transitionName="sharedImage" />
+
+    <ImageView
+        android:id="@+id/item_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_tiny"
+        android:src="@drawable/ic_descuento" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/item_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_very_small"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal"
+            tools:text="Nombre del producto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="CODE" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_normal"
+                    tools:text="7,5 €" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_very_small"
+                android:layout_weight="7"
+                android:background="@drawable/rounded_rectangle_solid"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableStart="@drawable/baseline_add_shopping_cart_white_24"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_tiny" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

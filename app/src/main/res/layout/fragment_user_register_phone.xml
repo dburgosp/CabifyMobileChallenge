@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:foregroundTint="@android:color/white"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="@android:color/white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:hintEnabled="true">
+
+        <EditText
+            android:id="@+id/user_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_type_phone"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:id="@+id/user_whatsapp"
+        style="?android:attr/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/user_whatsapp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/whatsapp"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:text="@string/user_use"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/user_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/user_sms"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/user_account_kit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="@string/user_register_account_kit"
+        android:textSize="@dimen/text_size_tiny" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/user_progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/user_check"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/user_msg"
+            tools:text="Verificando tu número de teléfono..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_progress"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/spacing_small"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+</LinearLayout>

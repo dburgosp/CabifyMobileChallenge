@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/checkout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:foregroundTint="@android:color/white"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/checkout_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/checkout_next"
+        android:layout_below="@id/checkout_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_very_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/checkout_summary_caption"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_big"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:gravity="center_vertical"
+                android:text="@string/checkout_summary_user_caption" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_small"
+                app:cardCornerRadius="@dimen/spacing_very_tiny">
+
+                <TextView
+                    android:id="@+id/checkout_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_small"
+                    tools:text="Nombre y apellidos\nTeléfono\nE-mail" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_very_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:drawableStart="@drawable/baseline_shopping_cart_24"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:gravity="center_vertical"
+                android:text="@string/checkout_summary_shoppingcart_caption" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_small"
+                app:cardCornerRadius="@dimen/spacing_very_tiny">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/checkout_items_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_small" />
+
+                    <TextView
+                        android:id="@+id/checkout_items_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:layout_marginEnd="@dimen/spacing_small"
+                        android:layout_marginBottom="@dimen/spacing_small"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        tools:text="TOTAL: 100,00 €" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_very_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:drawableStart="@drawable/baseline_place_24"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:gravity="center_vertical"
+                android:text="@string/checkout_summary_address_caption" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_small"
+                app:cardCornerRadius="@dimen/spacing_very_tiny">
+
+                <TextView
+                    android:id="@+id/checkout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_small"
+                    tools:text="Casa\nCalle San Bernardo 5\nPiso 3º B, 28009 Madrid" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_very_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:drawableStart="@drawable/baseline_payment_24"
+                android:drawablePadding="@dimen/spacing_tiny"
+                android:gravity="center_vertical"
+                android:text="@string/checkout_summary_payment_caption" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_small"
+                app:cardCornerRadius="@dimen/spacing_very_tiny">
+
+                <TextView
+                    android:id="@+id/checkout_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_small"
+                    android:textStyle="bold"
+                    tools:text="Tarjeta bancaria" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/checkout_errormsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkout_progress"
+        android:layout_margin="@dimen/spacing_small"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="Contactando con la pasarela de pago..." />
+
+    <ProgressBar
+        android:id="@+id/checkout_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/spacing_small" />
+
+    <Button
+        android:id="@+id/checkout_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/checkout_pay"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

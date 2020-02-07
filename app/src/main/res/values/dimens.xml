@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Image sizes -->
+    <dimen name="image_size_88">88dp</dimen>
+
+    <!-- Margins and paddings -->
+    <dimen name="spacing_very_tiny">4dp</dimen>
+    <dimen name="spacing_tiny">8dp</dimen>
+    <dimen name="spacing_very_small">12dp</dimen>
+    <dimen name="spacing_small">16dp</dimen>
+    <dimen name="spacing_normal">22dp</dimen>
+    <dimen name="spacing_big">28dp</dimen>
+    <dimen name="spacing_bigger">36dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Text sizes -->
+    <dimen name="text_size_tiny">12sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+</resources>

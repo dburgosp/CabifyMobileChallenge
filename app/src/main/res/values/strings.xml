@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Cabify Mobile Challenge</string>
+    <string name="title_activity_smart_collection">SmartCollectionActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="carbon_neutral">Somos neutros en carbono</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.\n\nUt enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_step_1">Visita nuestra tienda</string>
+    <string name="tutorial_title_step_2">Compra y ahorra</string>
+    <string name="tutorial_title_step_3">Login o registro</string>
+    <string name="tutorial_description_step_1">Añade artículos de la Smart Collection de Cabify a tu cesta de la compra con un sólo clic</string>
+    <string name="tutorial_description_step_2">Obtén interesantes descuentos comprando varias unidades de algunos productos</string>
+    <string name="tutorial_description_step_3">Autentícate para recibir tu compra cómodamente en tu domicilio. ¡Así de sencillo!</string>
+    <string name="finish">Finalizar</string>
+    <string name="skip">Omitir tutorial</string>
+
+    <!-- API messages -->
+    <string name="api_unknown_error">Error desconocido</string>
+
+    <!-- Keys for preferences -->
+    <string name="preferences_id_key">preferences_id_key</string>
+    <string name="preferences_email_key">preferences_email_key</string>
+    <string name="preferences_password_key">preferences_password_key</string>
+    <string name="preferences_token_key">preferences_password_key</string>
+    <string name="preferences_skip_tutorial_key">preferences_skip_tutorial_key</string>
+    <string name="preferences_name_key">preferences_name_key</string>
+    <string name="preferences_surname_key">preferences_surname_key</string>
+    <string name="preferences_phone_key">preferences_phone_key</string>
+
+    <!-- Main menu -->
+    <string name="menu_login">Login o registro</string>
+    <string name="menu_profile">Mi perfil</string>
+    <string name="menu_addresses">Direcciones</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_logout">Cerrar sesión</string>
+
+    <!-- Store -->
+    <string name="add_to_cart">Añadir a la cesta</string>
+    <string name="product_price">%s €</string>
+    <string name="products_error">No se ha podido obtener la lista de productos.</string>
+    <string name="no_products">No hay productos para mostrar.</string>
+    <string name="product_details_error">No se han podido obtener los detalles del producto.</string>
+    <string name="add">Añadir</string>
+    <string name="discount_description_m_x_n">¡Por cada %d unidades de este producto %d te sale gratis!</string>
+    <string name="discount_m_x_n">Descuento %dx%d</string>
+    <string name="discount_description_n_or_more">¡Si compras %d o más unidades de este producto la unidad te sale a %s €!</string>
+    <string name="discount_n_or_more">Descuento %d o más a %s €</string>
+    <string name="empty_cart">Vaciar cesta</string>
+    <string name="shopping_cart_is_emtpy">Tu cesta de la compra está vacía.</string>
+    <string name="shopping_cart_error">Se ha producido un error al intentar obtener los detalles de tu cesta de la compra.</string>
+    <string name="shopping_cart_title">Cesta de la compra</string>
+    <string name="confirm_shopping_cart_deletion">¿Vaciar tu cesta de la compra?</string>
+    <string name="amount_to_pay">Pagar %s €</string>
+    <string name="total_saving">¡Te ahorras %s €!</string>
+    <string name="checkout_address_title">Dirección de entrega</string>
+    <string name="checkout_address_caption">¿En qué dirección quieres recibir tu pedido?</string>
+    <string name="checkout_go_on">Continuar</string>
+    <string name="checkout_addresses_new">+ Añadir una dirección nueva</string>
+    <string name="product_units">%s x</string>
+    <string name="checkout_payment_caption">¿Qué metodo de pago quieres escoger?</string>
+    <string name="checkout_payment_title">Forma de pago</string>
+    <string name="checkout_summary_shoppingcart_caption">Tu pedido:</string>
+    <string name="checkout_summary_address_caption">Dirección de entrega:</string>
+    <string name="checkout_summary_payment_caption">Forma de pago:</string>
+    <string name="checkout_summary_title">Resumen de tu pedido</string>
+    <string name="checkout_summary_caption">Comprueba tus datos antes de proceder al pago:</string>
+    <string name="checkout_summary_total">Total:  %s €</string>
+    <string name="checkout_summary_user_caption">Titular:</string>
+    <string name="checkout_payment_server_error_title">Error de conexión</string>
+    <string name="close">Cerrar</string>
+    <string name="checkout_payment_server_error_details">Se ha producido un error al conectar con la pasarela de pago:\\n\"%s\"\\nPor favor, inténtelo de nuevo.</string>
+    <string name="transaction_code">Cód. de autorización:</string>
+    <string name="transaction_id">Id. de transacción:</string>
+    <string name="transaction_date">Fecha y hora:</string>
+    <string name="transaction_amount">Importe:</string>
+    <string name="transaction_user">Titular:</string>
+    <string name="checkout_pay">Pagar</string>
+    <string name="transaction_close">Cerrar</string>
+    <string name="transaction_to_pay">Total:  %s €</string>
+    <string name="transaction_comments">Se ha enviado un e-mail a tu dirección de correo electrónico con los detalles de la entrega.\nGracias por confiar en Cabify.</string>
+    <string name="transaction_error">El pago no ha podido realizarse. Ponte en contacto con nosotros y te ayudaremos a completar el pedido.</string>
+    <string name="store_confirm_exit">Pulsa atrás otra vez para salir.</string>
+    <string name="confirm_logout">¿Cerrar sesión?</string>
+    <string name="checkout_connecting">Conectando con la pasarela de pago…</string>
+
+    <!-- User management -->
+    <string name="user_welcome">Bienvenido a Cabify Mobile Challenge</string>
+    <string name="user_welcome_subtitle">Regístrate o inicia sesión con tu email</string>
+    <string name="user_accept_conditions">Si continúas aceptas nuestra Política de privacidad y nuestras Condiciones de uso general.</string>
+    <string name="user_privacy_title">Política de privacidad</string>
+    <string name="user_conditions_title">Condiciones de uso general</string>
+    <string name="user_go_on">Continuar</string>
+    <string name="user_login_title">Login o registro</string>
+    <string name="user_type_email">Introduce tu email</string>
+    <string name="user_password_title">Inicia sesión</string>
+    <string name="user_type_password">Tu contraseña</string>
+    <string name="user_enter">Entrar</string>
+    <string name="user_forgotten_password">He olvidado mi contraseña</string>
+    <string name="user_password_recovery_title">Introduce el código</string>
+    <string name="user_type_code">Introduce el código</string>
+    <string name="user_no_code">No recibí ningún código</string>
+    <string name="user_recovery_password_text">Ya casi estamos, tan sólo tienes que introducir el código de %d dígitos que te hemos enviado a %s</string>
+    <string name="incorrect_password">La contraseña es incorrecta.</string>
+    <string name="login_required_to_pay">Debes haber iniciado sesión antes de proceder al pago.</string>
+    <string name="generate_code_again">¿Generar otro código?</string>
+    <string name="send_new_code_text">Te enviaremos un nuevo código y el anterior será invalidado. ¿Estás seguro?</string>
+    <string name="user_validate">Validar</string>
+    <string name="user_create_password">Crear contraseña</string>
+    <string name="user_new_password">Nueva contraseña</string>
+    <string name="user_repeat_new_password">Repite la nueva contraseña</string>
+    <string name="password_too_short">La contraseña debe tener al menos %d caracteres.</string>
+    <string name="password_dont_match">Las contraseñas no coinciden.</string>
+    <string name="recovery_password_check_error">Se ha producido un error al comprobar tu código de recuperación de contraseña. Por favor, inténtalo de nuevo.</string>
+    <string name="recovery_password_generation_error">Se ha producido un error al generar el código de recuperación de contraseña. Por favor, inténtalo de nuevo.</string>
+    <string name="new_validation_code_sent">Se ha generado un nuevo código. Por favor, revisa tu e-mail.</string>
+    <string name="user_login_welcome">¡Bienvenido/a, %s!</string>
+    <string name="user_help_title">Ayuda</string>
+    <string name="logged_out">Sesión cerrada.</string>
+    <string name="user_register_title">Crea tu cuenta</string>
+    <string name="user_type_name">Nombre</string>
+    <string name="user_type_surname">Apellidos</string>
+    <string name="user_sms">Usar SMS</string>
+    <string name="user_whatsapp">Usar WhatsApp</string>
+    <string name="user_use">Usar</string>
+    <string name="user_type_phone">Introduce tu número de móvil</string>
+    <string name="user_register_phone_title">Teléfono móvil</string>
+    <string name="user_register_account_kit">Cabify utiliza Account Kit, una tecnología de Facebook para ayudarte a iniciar sesión. No necesitas una cuenta de Facebook. Se aplican cargos por mensajes y datos. Obtén información sobre cómo usa Facebook tu información.</string>
+    <string name="user_register_account_kit_link">Obtén información sobre cómo usa Facebook tu información</string>
+    <string name="account_kit_title">Account Kit</string>
+    <string name="user_register_validating">Verificando tu número de teléfono…</string>
+    <string name="user_register_valid">Número de teléfono verificado.</string>
+    <string name="user_register_not_valid">No hemos podido validar tu teléfono.</string>
+    <string name="user_registration_conditions">Toca Continuar para aceptar las Condiciones, la Política de datos y el uso de cookies de Facebook, y la Política de privacidad y las Condiciones del servicio de Cabify.</string>
+    <string name="user_registration_conditions_1">Condiciones</string>
+    <string name="user_registration_conditions_2">Política de datos</string>
+    <string name="user_registration_conditions_3">uso de cookies</string>
+    <string name="user_registration_conditions_4">Política de privacidad</string>
+    <string name="user_registration_conditions_5">Condiciones del servicio</string>
+    <string name="user_registration_code_title">Valida tu código</string>
+    <string name="user_registration_code_text">Introduce el código de %d dígitos que te hemos enviado al %s</string>
+    <string name="facebook_conditions">Condiciones de Facebook</string>
+    <string name="facebook_policy">Política de datos de Facebook</string>
+    <string name="facebook_cookies">Uso de cookies de Facebook</string>
+    <string name="register_ok_instructions">Para poder hacer compras online tienes que especificar una dirección de envío. Puedes hacerlo ahora o dejarlo para más tarde.</string>
+    <string name="user_select_address">Elegir dirección de envío</string>
+    <string name="skip_address">Saltar</string>
+    <string name="welcome_new_user">¡Bien, %s!\nTu cuenta está creada</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Arrays for tutorial screen -->
+    <string-array name="tutorial_titles_array">
+        <item>@string/tutorial_title_step_1</item>
+        <item>@string/tutorial_title_step_2</item>
+        <item>@string/tutorial_title_step_3</item>
+    </string-array>
+
+    <string-array name="tutorial_descriptions_array">
+        <item>@string/tutorial_description_step_1</item>
+        <item>@string/tutorial_description_step_2</item>
+        <item>@string/tutorial_description_step_3</item>
+    </string-array>
+
+    <integer-array name="tutorial_images_array">
+        <item>@drawable/tutorial_1</item>
+        <item>@drawable/tutorial_2</item>
+        <item>@drawable/tutorial_3</item>
+    </integer-array >
+</resources>

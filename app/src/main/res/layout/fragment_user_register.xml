@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:foregroundTint="@android:color/white"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="@android:color/white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_name_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:hintEnabled="true">
+
+        <EditText
+            android:id="@+id/user_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_type_name"
+            android:inputType="textCapWords" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_surname_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:hintEnabled="true">
+
+        <EditText
+            android:id="@+id/user_surname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_type_surname"
+            android:inputType="textCapWords" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_password_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:hintEnabled="true">
+
+        <EditText
+            android:id="@+id/user_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_type_password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/user_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:text="@string/user_enter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+</LinearLayout>

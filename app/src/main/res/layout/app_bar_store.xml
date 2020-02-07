@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store.StoreActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Smart Collection by Cabify"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/fab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/spacing_small"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24px" />
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/spacing_tiny"
+            android:background="@drawable/circle_solid"
+            android:backgroundTint="@color/colorPink"
+            android:elevation="@dimen/spacing_tiny"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_tiny"
+            tools:text="10" />
+    </RelativeLayout>
+</RelativeLayout>
